@@ -41,11 +41,5 @@ def currency_cmd(message: telebot.types.Message):
             text = f'Цена валюты {currency[quote]} в количестве {amount} в {currency[base]} = {total_base} {currency[base]}'
             bot.send_message(message.chat.id, text)
 
-
-    # adress = f'https://min-api.cryptocompare.com/data/price?fsym={quote}&tsyms={base}'
-    # quote, base = message.text.split(' ')
-
-
-
 bot.polling(none_stop=True)
 
